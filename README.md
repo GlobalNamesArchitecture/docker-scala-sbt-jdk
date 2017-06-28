@@ -16,21 +16,21 @@ Useful for building in environments like CircleCI v2.
 2. Pull [automated build](https://hub.docker.com/r/gnames/scala-sbt/) from public [Docker Hub Registry](https://hub.docker.com):
 3. See [tags](https://hub.docker.com/r/gnames/scala-sbt/tags/) for built specific versions (not the latest ones)
 ```
-docker pull gnames/scala-sbt
+docker pull gnames/scala-sbt-jdk
 ```
 Alternatively, you can build an image from Dockerfile:
 ```
-docker build -t scala-sbt github.com/gnames/scala-sbt
+docker build -t scala-sbt-jdk github.com/gnames/scala-sbt-jdk
 ```
 Or with specific versions:
 ```
-docker build -t scala-sbt --build-arg SCALA_VERSION=2.12.1 --build-arg SBT-VERSION=0.13.15 github.com/gnames/scala-sbt
+docker build -t scala-sbt-jdk --build-arg SCALA_VERSION=2.12.1 --build-arg SBT-VERSION=0.13.15 github.com/gnames/scala-sbt-jdk
 ```
 
 ## Usage ##
 
 ```
-docker run -it --rm gnames/scala-sbt /bin/bash
+docker run -it --rm gnames/scala-sbt-jdk /bin/bash
 ```
 
 
